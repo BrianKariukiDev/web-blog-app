@@ -439,6 +439,11 @@ footer ul a:hover{
     .search_bar-container{
         width: 60%;
     }
+
+    /* GENERAL FORM  */
+    .form_section-container{
+        padding: 3rem;
+    }
 }
 
 /* MEDIA QUERIES(SMALL DEVICES)  */
@@ -481,6 +486,11 @@ footer ul a:hover{
     /* SINGLE POST  */
     .singlepost_container{
         background-color: transparent;
+        padding: 0;
+    }
+
+     /* GENERAL FORM  */
+     .form_section-container{
         padding: 0;
     }
 }
@@ -574,3 +584,65 @@ footer ul a:hover{
     display: grid;
     place-content: center;
 }
+
+
+
+/* GENERAL FORM  */
+.form_section{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.form_section-container{
+    width: var(--form-width);
+}
+
+.alert_message{
+    /* background: red; */
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: var(--card-border-radius-2);
+
+}
+
+.alert_message.error{
+    background: var(--color-red-light);
+    color: var(--color-red);
+}
+
+.alert_message.success{
+    background: var(--color-green-light);
+    color: var(--color-green);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+input,textarea,select{
+    padding: 0.8rem 1.4rem;
+    background-color: var(--color-gray-900);
+    border-radius: var(--card-border-radius-2);
+    resize: none;
+    color: var(--color-white);
+}
+
+.form_section small{
+    margin-top: 1rem;
+    display: block;
+}
+
+.form_section small a{
+    color: var(--color-primary);
+}
+
+/* SIGNUP  */
