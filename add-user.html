@@ -38,28 +38,26 @@
 
     <section class="form_section">
         <div class="container form_section-container">
-            <h2>Add Post</h2>
+            <h2>Add User</h2>
             <div class="alert_message error">
                 <p>This is an error message</p>
             </div>
             <form action="" enctype="multipart/form-data">
-                <input type="text" placeholder="Title">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="User Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Create Password">
+                <input type="password" placeholder="Confirm Password">
                 <select name="" id="">
-                    <option value="1">Travel</option>
-                    <option value="1">Travel</option>
-                    <option value="1">Travel</option>
-                    <option value="1">Travel</option>
+                    <option value="0">Author</option>
+                    <option value="1">Admin</option>
                 </select>
-                <textarea name="" id="" rows="10" placeholder="Body"></textarea>
-                <div class="form_control inline">
-                    <input type="checkbox" id="is_featured" checked="checked">
-                    <label for="is_featured">featured</label>
-                </div>
                 <div class="form_control">
-                    <label for="thumbnail">Add Thumbnail</label>
-                    <input type="file">
+                    <label for="avatar"></label>
+                    <input type="file" id="avatar">
                 </div>
-                <button type="submit" class="btn">Add Post</button>
+                <button type="submit" class="btn">Sign Up</button>
             </form>
         </div>
     </section>
