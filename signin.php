@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php
+>
+<php
+ lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <section class="form_section">
@@ -17,9 +19,11 @@
                 <input type="text" placeholder="User Name or Email">
                 <input type="password" placeholder="Password">
                 <button type="submit" class="btn">Sign In</button>
-                <small>Don't have an account? <a href="signup.html">Sign In</a></small>
+                <small>Don't have an account? <a href="signup.php
+                ">Sign In</a></small>
             </form>
         </div>
     </section>
 </body>
-</html>
+</php
+>

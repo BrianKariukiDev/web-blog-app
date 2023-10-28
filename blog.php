@@ -1,32 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php
+>
+<php
+ lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog site</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <style src="index.js" defer></style>
     <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="container nav_container">
-            <a href="index.html" class="nav_logo">INCOGNITO</a>
+            <a href="index.php
+            " class="nav_logo">INCOGNITO</a>
             <ul class="nav_items">
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- <li><a href="signin.html">Signin</a></li> -->
+                <li><a href="blog.php
+                ">Blog</a></li>
+                <li><a href="about.php
+                ">About</a></li>
+                <li><a href="services.php
+                ">Services</a></li>
+                <li><a href="contact.php
+                ">Contact</a></li>
+                <!-- <li><a href="signin.php
+                ">Signin</a></li> -->
                 <li class="nav_profile">
                     <div class="avatar">
                         <img src="images/avatar1.jpg" alt="">
                     </div>
                     <ul>
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="logout.html">Log out</a></li>
+                        <li><a href="dashboard.php
+                        ">Dashboard</a></li>
+                        <li><a href="logout.php
+                        ">Log out</a></li>
                     </ul>
                 </li>
             </ul>
@@ -36,28 +46,17 @@
     </nav>
     <!-- NAV END -->
 
-    <section class="featured">
-        <div class="container featured_container">
-            <div class="post_thumbnail">
-                <img src="images/blog1.jpg" alt="">
+    <section class="search_bar">
+        <form action="" class="container search_bar-container">
+            <div>
+                <i class="fa-solid fa-search"></i>
+                <input type="search" name="" placeholder="search">
             </div>
-            <div class="post_info">
-                <a href="" class="category_button">Wild Life</a>
-                <h2 class="post_title"><a href="post.html">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis?</a></h2>
-                <p class="post_body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit optio expedita placeat temporibus sapiente a facilis quia, aspernatur ipsa fuga, consectetur asperiores repudiandae neque animi magnam? Consequatur quod praesentium veniam!</p>
-                <div class="post_author">
-                    <div class="post_author-avatar">
-                        <img src="images/avatar2.jpg" alt="">
-                    </div>
-                    <div class="post_author-info">
-                        <h5>By: Jane Doe</h5>
-                        <small>June 10,2022 - 07:23</small>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <button type="submit" class="btn">Go</button>
+        </form>
     </section>
-    <!-- END OF FEATURED -->
+
+    <!-- SEARCH END  -->
 
     <section class="posts">
         <div class="container posts_container">
@@ -66,9 +65,10 @@
                     <img src="images/blog2.jpg" alt="">
                 </div>
                 <div class="post_info">
-                    <a href="category-posts.html" class="category_button">Wild Life</a>
+                    <a href="" class="category_button">Wild Life</a>
                     <h3 class="post_title">
-                        <a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
+                        <a href="post.php
+                        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
                     </h3>
                     <p class="post_body">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorem odio quas eos aliquid debitis omnis blanditiis minus ipsum. In.
@@ -89,9 +89,10 @@
                     <img src="images/blog2.jpg" alt="">
                 </div>
                 <div class="post_info">
-                    <a href="category-posts.html" class="category_button">Wild Life</a>
+                    <a href="" class="category_button">Wild Life</a>
                     <h3 class="post_title">
-                        <a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
+                        <a href="post.php
+                        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
                     </h3>
                     <p class="post_body">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorem odio quas eos aliquid debitis omnis blanditiis minus ipsum. In.
@@ -112,9 +113,10 @@
                     <img src="images/blog2.jpg" alt="">
                 </div>
                 <div class="post_info">
-                    <a href="category-posts.html" class="category_button">Wild Life</a>
+                    <a href="" class="category_button">Wild Life</a>
                     <h3 class="post_title">
-                        <a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
+                        <a href="post.php
+                        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
                     </h3>
                     <p class="post_body">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorem odio quas eos aliquid debitis omnis blanditiis minus ipsum. In.
@@ -135,9 +137,10 @@
                     <img src="images/blog6.jpg" alt="">
                 </div>
                 <div class="post_info">
-                    <a href="category-posts.html" class="category_button">Wild Life</a>
+                    <a href="" class="category_button">Wild Life</a>
                     <h3 class="post_title">
-                        <a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
+                        <a href="post.php
+                        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
                     </h3>
                     <p class="post_body">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorem odio quas eos aliquid debitis omnis blanditiis minus ipsum. In.
@@ -160,7 +163,8 @@
                 <div class="post_info">
                     <a href="" class="category_button">Wild Life</a>
                     <h3 class="post_title">
-                        <a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
+                        <a href="post.php
+                        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
                     </h3>
                     <p class="post_body">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorem odio quas eos aliquid debitis omnis blanditiis minus ipsum. In.
@@ -183,7 +187,8 @@
                 <div class="post_info">
                     <a href="" class="category_button">Wild Life</a>
                     <h3 class="post_title">
-                        <a href="post.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
+                        <a href="post.php
+                        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus.</a>
                     </h3>
                     <p class="post_body">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam dolorem odio quas eos aliquid debitis omnis blanditiis minus ipsum. In.
@@ -273,4 +278,5 @@
         </div>
     </footer>
 </body>
-</html>
+</php
+>

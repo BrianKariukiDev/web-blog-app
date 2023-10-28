@@ -1,46 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog site</title>
-    <link rel="stylesheet" href="style.css">
-    <style src="index.js" defer></style>
-    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
-</head>
-<body>
-    <nav>
-        <div class="container nav_container">
-            <a href="index.html" class="nav_logo">INCOGNITO</a>
-            <ul class="nav_items">
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- <li><a href="signin.html">Signin</a></li> -->
-                <li class="nav_profile">
-                    <div class="avatar">
-                        <img src="images/avatar1.jpg" alt="">
-                    </div>
-                    <ul>
-                        <li><a href="dashboard.html">Dashboard</a></li>
-                        <li><a href="logout.html">Log out</a></li>
-                    </ul>
-                </li>
-            </ul>
-                    <button id="open_nav-btn"><i class="fa-solid fa-bars"></i></button>
-                    <button id="close_nav-btn"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-    </nav>
-    <!-- NAV END -->
-
-
-    <section class="empty_page">
-        <h1>Services Page</h1>
-    </section>
-
+    
     <footer>
         <div class="footer_socials">
             <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>

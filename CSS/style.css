@@ -56,6 +56,10 @@ section{
     width: 100vw;
 }
 
+.section_extra-margin{
+    margin-top: 7rem;
+}
+
 h1,h2,h3,h4,h5,h6{
     color: var(--color-white);
     line-height: 1.3rem;
@@ -695,6 +699,10 @@ footer ul a:hover{
 .alert_message.error{
     background: var(--color-red-light);
     color: var(--color-red);
+}
+
+.alert_message.lg{
+    text-align: center;
 }
 
 .alert_message.success{
