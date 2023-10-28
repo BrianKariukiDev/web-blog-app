@@ -3,7 +3,7 @@ require './config/constants.php';
 
 ?>
 <!DOCTYPE html>
-<php lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,18 +19,18 @@ require './config/constants.php';
         <div class="container nav_container">
             <a href="index.php" class="nav_logo">INCOGNITO</a>
             <ul class="nav_items">
-                <li><a href="blog.php">Blog</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="services.php">Services</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="<?= ROOT_URL?>blog.php">Blog</a></li>
+                <li><a href="<?= ROOT_URL?>about.php">About</a></li>
+                <li><a href="<?= ROOT_URL?>services.php">Services</a></li>
+                <li><a href="<?= ROOT_URL?>contact.php">Contact</a></li>
                 <!-- <li><a href="signin.php">Signin</a></li> -->
                 <li class="nav_profile">
                     <div class="avatar">
                         <img src="images/avatar1.jpg" alt="">
                     </div>
                     <ul>
-                        <li><a href="dashboard.php">Dashboard</a></li>
-                        <li><a href="logout.php">Log out</a></li>
+                        <li><a href="<?= ROOT_URL?>dashboard.php">Dashboard</a></li>
+                        <li><a href="<?= ROOT_URL?>logout.php">Log out</a></li>
                     </ul>
                 </li>
             </ul>

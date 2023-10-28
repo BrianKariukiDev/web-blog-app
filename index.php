@@ -181,3 +181,8 @@
         </div>
     </section>
     <!-- END OF CATEGORY BUTTONS  -->
+
+
+    <?php
+        include_once "./partials/footer.php";
+        ?>
