@@ -1,5 +1,5 @@
 <?php
-require_once "config/constants.php";
+require_once "../config/constants.php";
 
 ?>
 <!DOCTYPE html>
@@ -8,11 +8,11 @@ require_once "config/constants.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog site</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <style src="index.js" defer></style>
-    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="js/main.js" defer></script>
+    <script src="../js/main.js" defer></script>
 </head>
 <body>
     <nav>
