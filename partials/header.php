@@ -1,5 +1,6 @@
 <?php
 require_once "config/constants.php";
+require_once "config/database.php";
 
 ?>
 <!DOCTYPE html>
@@ -23,16 +24,16 @@ require_once "config/constants.php";
                 <li><a href="<?= ROOT_URL?>about.php">About</a></li>
                 <li><a href="<?= ROOT_URL?>services.php">Services</a></li>
                 <li><a href="<?= ROOT_URL?>contact.php">Contact</a></li>
-                <!-- <li><a href="signin.php">Signin</a></li> -->
-                <li class="nav_profile">
+                <li><a href="signin.php">Signin</a></li>
+                <!-- <li class="nav_profile">
                     <div class="avatar">
                         <img src="images/avatar1.jpg" alt="">
                     </div>
                     <ul>
-                        <li><a href="<?= ROOT_URL?>dashboard.php">Dashboard</a></li>
+                        <li><a href="<?= ROOT_URL?>admin/index.php">Dashboard</a></li>
                         <li><a href="<?= ROOT_URL?>logout.php">Log out</a></li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
                     <button id="open_nav-btn"><i class="fa-solid fa-bars"></i></button>
                     <button id="close_nav-btn"><i class="fa-solid fa-xmark"></i></button>

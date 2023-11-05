@@ -29,7 +29,7 @@ require_once "../config/constants.php";
                         <img src="images/avatar1.jpg" alt="">
                     </div>
                     <ul>
-                        <li><a href="<?= ROOT_URL?>dashboard.php">Dashboard</a></li>
+                        <li><a href="<?= ROOT_URL?>admin/index.php">Dashboard</a></li>
                         <li><a href="<?= ROOT_URL?>logout.php">Log out</a></li>
                     </ul>
                 </li>

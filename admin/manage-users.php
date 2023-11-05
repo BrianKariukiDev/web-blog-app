@@ -10,32 +10,32 @@
             <aside>
                 <ul>
                     <li>
-                        <a href="add-post.html"><i class="fa-solid fa-pen"></i>
+                        <a href="add-post.php"><i class="fa-solid fa-pen"></i>
                             <h5>Add Post</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="dashboard.html"><i class="fa-regular fa-address-card"></i>
+                        <a href="dashboard.php"><i class="fa-regular fa-address-card"></i>
                             <h5>Manage Posts</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="add-user.html"><i class="fa-solid fa-user-plus"></i>
+                        <a href="add-user.php"><i class="fa-solid fa-user-plus"></i>
                             <h5>Add user</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="manage-users.html" class="active"><i class="fa-solid fa-user-group"></i>
+                        <a href="manage-users.php" class="active"><i class="fa-solid fa-user-group"></i>
                             <h5>Manage Users</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="add-category.html"><i class="fa-regular fa-pen-to-square"></i>
+                        <a href="add-category.php"><i class="fa-regular fa-pen-to-square"></i>
                             <h5>Add Category</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="manage-categories.html"><i class="fa-solid fa-list-ul"></i></i>
+                        <a href="manage-categories.php"><i class="fa-solid fa-list-ul"></i></i>
                             <h5>Manage categories</h5>
                         </a>
                     </li>
@@ -57,22 +57,22 @@
                         <tr>
                             <td>John doe</td>
                             <td>John</td>
-                            <td><a href="edit-user.html" class="btn sm">Edit</a></td>
-                            <td><a href="delete-user.html" class="btn sm danger">Delete</a></td>
+                            <td><a href="edit-user.php" class="btn sm">Edit</a></td>
+                            <td><a href="delete-user.php" class="btn sm danger">Delete</a></td>
                             <td>Yes</td>
                         </tr>
                         <tr>
                             <td>John doe</td>
                             <td>John</td>
-                            <td><a href="edit-user.html" class="btn sm">Edit</a></td>
-                            <td><a href="delete-user.html" class="btn sm danger">Delete</a></td>
+                            <td><a href="edit-user.php" class="btn sm">Edit</a></td>
+                            <td><a href="delete-user.php" class="btn sm danger">Delete</a></td>
                             <td>Yes</td>
                         </tr>
                         <tr>
                             <td>John doe</td>
                             <td>John</td>
-                            <td><a href="edit-user.html" class="btn sm">Edit</a></td>
-                            <td><a href="delete-user.html" class="btn sm danger">Delete</a></td>
+                            <td><a href="edit-user.php" class="btn sm">Edit</a></td>
+                            <td><a href="delete-user.php" class="btn sm danger">Delete</a></td>
                             <td>Yes</td>
                         </tr>
                     </tbody>

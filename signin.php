@@ -18,7 +18,7 @@
                 <input type="text" placeholder="User Name or Email">
                 <input type="password" placeholder="Password">
                 <button type="submit" class="btn">Sign In</button>
-                <small>Don't have an account? <a href="signup.php">Sign In</a></small>
+                <small>Don't have an account? <a href="signup.php">Sign Up</a></small>
             </form>
         </div>
     </section>
