@@ -1,5 +1,5 @@
 <?php
-    include_once "partials/header.php";
+    require_once "partials/header.php";
 ?>
 <section class="search_bar">
         <form action="" class="container search_bar-container">
@@ -17,7 +17,7 @@
         <div class="container posts_container">
             <article class="post">
                 <div class="post_thumbnail">
-                    <img src="images/blog2.jpg" alt="">
+                    <img src="<?=ROOT_URL?>.'images2/.$avatar'" alt="">
                 </div>
                 <div class="post_info">
                     <a href="" class="category_button">Wild Life</a>

@@ -1,7 +1,15 @@
 <?php
+session_start();
 require_once "config/constants.php";
 require_once "config/database.php";
 
+// fetch user from db 
+if(isset($_SESSION['user-id'])){
+    $id= filter_var($_SESSION['user-id'],FILTER_SANITIZE_NUMBER_INT);
+    $query="SELECT avatar from users WHERE id=$id";
+    $result=mysqli_query($conn,$query);
+    $avatar=mysqli_fetch_assoc($result);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,16 +32,20 @@ require_once "config/database.php";
                 <li><a href="<?= ROOT_URL?>about.php">About</a></li>
                 <li><a href="<?= ROOT_URL?>services.php">Services</a></li>
                 <li><a href="<?= ROOT_URL?>contact.php">Contact</a></li>
-                <li><a href="signin.php">Signin</a></li>
-                <!-- <li class="nav_profile">
+                <?php
+                if(isset($_SESSION['user-id'])): ?>
+                <li class="nav_profile">
                     <div class="avatar">
-                        <img src="images/avatar1.jpg" alt="">
+                    <img src="<?=ROOT_URL . 'images/' .$avatar['avatar'] ?>" alt="">
                     </div>
                     <ul>
                         <li><a href="<?= ROOT_URL?>admin/index.php">Dashboard</a></li>
                         <li><a href="<?= ROOT_URL?>logout.php">Log out</a></li>
                     </ul>
-                </li> -->
+                </li>
+                <?php else : ?>
+                <li><a href="<?=ROOT_URL?>signin.php">Signin</a></li>
+                <?php endif ?>
             </ul>
                     <button id="open_nav-btn"><i class="fa-solid fa-bars"></i></button>
                     <button id="close_nav-btn"><i class="fa-solid fa-xmark"></i></button>

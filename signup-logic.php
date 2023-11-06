@@ -63,6 +63,7 @@ session_start();
         
         // redirect to sign up page if error
         if($_SESSION['signup']){
+            unlink($avatar_destination_path);
             // session to pass back the data keyed in 
             $_SESSION['signup-data']= $_POST;
             header('location:'.ROOT_URL.'signup.php');

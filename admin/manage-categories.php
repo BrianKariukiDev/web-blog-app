@@ -15,7 +15,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="dashboard.php"><i class="fa-regular fa-address-card"></i>
+                        <a href="index.php"><i class="fa-regular fa-address-card"></i>
                             <h5>Manage Posts</h5>
                         </a>
                     </li>
