@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    // session_start();
     require_once 'config/database.php';
 
     $username_email=$_SESSION['signin-data']['username_email'] ?? null;

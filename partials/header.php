@@ -1,8 +1,8 @@
 <?php
-session_start();
-require_once "config/constants.php";
-require_once "config/database.php";
-
+// session_start();
+// require "../config/database.php";
+require_once(realpath(dirname(__FILE__) . '/../config/database.php'));
+require_once (realpath(dirname(__FILE__). '/../admin/partials/header.php'));
 // fetch user from db 
 if(isset($_SESSION['user-id'])){
     $id= filter_var($_SESSION['user-id'],FILTER_SANITIZE_NUMBER_INT);
@@ -17,11 +17,10 @@ if(isset($_SESSION['user-id'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog site</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <style src="index.js" defer></style>
-    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="<?=ROOT_URL?>CSS/style.css">
+    <link rel="stylesheet" href="<?=ROOT_URL?>fontawesome-free-6.4.2-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="js/main.js" defer></script>
+    <script src="<?=ROOT_URL?>js/main.js" defer></script>
 </head>
 <body>
     <nav>
@@ -36,7 +35,7 @@ if(isset($_SESSION['user-id'])){
                 if(isset($_SESSION['user-id'])): ?>
                 <li class="nav_profile">
                     <div class="avatar">
-                    <img src="<?=ROOT_URL . 'images/' .$avatar['avatar'] ?>" alt="">
+                    <img src="<?=ROOT_URL . 'images2/' .$avatar['avatar'] ?>" alt="">
                     </div>
                     <ul>
                         <li><a href="<?= ROOT_URL?>admin/index.php">Dashboard</a></li>
