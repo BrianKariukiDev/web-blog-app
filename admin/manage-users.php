@@ -1,5 +1,11 @@
 <?php
     include_once "partials/header.php";
+
+    // Fetching users from database 
+    $current_admin_id=$_SESSION['user-id'];
+
+    $query= "SELECT * FROM users WHERE id!=$current_admin_id";
+    $users=mysqli_query($conn,$query);
 ?>
     
     
@@ -7,6 +13,11 @@
         <div class="container dashboard_container">
             <button id="show_sidebar-btn" class="sidebar_toggle"><i class="fa-solid fa-chevron-right"></i></button>
             <button id="hide_sidebar-btn" class="sidebar_toggle"><i class="fa-solid fa-chevron-left"></i></button>
+            <?php
+                if(isset($_SESSION['add-user-success'])):?>
+                <script>alert('<?=$_SESSION['add-user-success'];
+                unset($_SESSION['add-user-success']) ?>')</script>
+                <?php endif?>
             <aside>
                 <ul>
                     <li>
@@ -54,27 +65,15 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php while($user=mysqli_fetch_assoc($users)) :?>
                         <tr>
-                            <td>John doe</td>
-                            <td>John</td>
-                            <td><a href="edit-user.php" class="btn sm">Edit</a></td>
-                            <td><a href="delete-user.php" class="btn sm danger">Delete</a></td>
+                            <td><?="{$user['Firstname']}  {$user['Lastname']}" ?></td>
+                            <td><?=$user['username'] ?></td>
+                            <td><a href="<?ROOT_URL ?>admin/edit-user.php?id=<?=$user['id'] ?>" class="btn sm">Edit</a></td>
+                            <td><a href="<?ROOT_URL ?>admin/delete-user.php" class="btn sm danger">Delete</a></td>
                             <td>Yes</td>
                         </tr>
-                        <tr>
-                            <td>John doe</td>
-                            <td>John</td>
-                            <td><a href="edit-user.php" class="btn sm">Edit</a></td>
-                            <td><a href="delete-user.php" class="btn sm danger">Delete</a></td>
-                            <td>Yes</td>
-                        </tr>
-                        <tr>
-                            <td>John doe</td>
-                            <td>John</td>
-                            <td><a href="edit-user.php" class="btn sm">Edit</a></td>
-                            <td><a href="delete-user.php" class="btn sm danger">Delete</a></td>
-                            <td>Yes</td>
-                        </tr>
+                        <?php endwhile?>
                     </tbody>
                 </table>
             </main>
